@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://server.upj/presensi2/';
+$config['base_url']	= 'http://localhost/presensi2/';
 
 /*
 |--------------------------------------------------------------------------

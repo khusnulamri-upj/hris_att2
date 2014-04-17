@@ -49,8 +49,8 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'presensi';
-$db['default']['password'] = 'PunyaICTYa';
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'Upeje2013';
 $db['default']['database'] = 'presensi2';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
@@ -65,8 +65,8 @@ $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
 $db['temporary']['hostname'] = 'localhost';
-$db['temporary']['username'] = 'presensi';
-$db['temporary']['password'] = 'PunyaICTYa';
+$db['temporary']['username'] = 'root';
+$db['temporary']['password'] = 'Upeje2013';
 $db['temporary']['database'] = 'presensi_temp';
 $db['temporary']['dbdriver'] = 'mysql';
 $db['temporary']['dbprefix'] = '';
