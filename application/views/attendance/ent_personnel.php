@@ -67,10 +67,16 @@ $this->load->view('template_groundwork/body_menu');
                     $mark_is_early = ' red';
                 }
                 $this->load->helper('custom_html');
-                if ($a->is_same || $a->is_late || $a->is_early || $a->is_blank || $a->is_holiday) {
+                /*if ($a->is_same || $a->is_late || $a->is_early || $a->is_blank || $a->is_holiday) {
+                    $select_ket = create_select('keterangan['.$a->tgl.']',(isset($keterangan_option)?$keterangan_option:array()),(isset($a->opt_keterangan)?$a->opt_keterangan:0));
+                    //$select_ket = form_dropdown('keterangan[]',isset($keterangan_option)?$keterangan_option:array(),isset($a->opt_keterangan)?$a->opt_keterangan:0);
+                }*/
+                
+                if ($a->is_same || $a->is_late || $a->is_early || $a->is_blank || $a->is_holiday || isset($a->opt_keterangan)) {
                     $select_ket = create_select('keterangan['.$a->tgl.']',(isset($keterangan_option)?$keterangan_option:array()),(isset($a->opt_keterangan)?$a->opt_keterangan:0));
                     //$select_ket = form_dropdown('keterangan[]',isset($keterangan_option)?$keterangan_option:array(),isset($a->opt_keterangan)?$a->opt_keterangan:0);
                 }
+                
                 echo "
                 <div class=\"equalize row\">
                   <div class=\"one seventh padded align-center$mark_is_holiday\">$a->tanggal</div>
